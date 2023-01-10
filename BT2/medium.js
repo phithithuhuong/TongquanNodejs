@@ -44,23 +44,18 @@ let medium=
     ];
 let medium1= 0;
 let medium2= 0;
-let  male= []
+let  male= [];
+let female= [];
 for (let i = 0; i < medium.length; i++) {
     if (medium[i].gender==='male') {
         medium1+=medium[i].point
         male.push(medium1)
+    } else {
+        medium2+=medium[i].point;
+        female.push(medium)
+        
     }
     
 }
-
 console.log('Point medium of male is :',medium1/male.length);
-let female= []
-for (let i = 0; i < medium.length; i++) {
-    if(medium[i].gender==='female'){
-        medium2+=medium[i].point;
-        female.push(medium)
-
-    }
-
-}
 console.log('Point medium of female is :',medium2/female.length);
